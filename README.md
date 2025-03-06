@@ -17,7 +17,7 @@ This project is a feedback form for Inter City Club. Users can submit their feed
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/feedback.git
+    git clone https://github.com/a-elmohamady/feedback.git
     cd feedback
     ```
 
