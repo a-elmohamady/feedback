@@ -10,6 +10,8 @@ This project is a feedback form for Inter City Club. Users can submit their feed
 - Automatic language toggle on page load
 - SweetAlert2 for error and success messages
 - Telegram notifications
+- Ability to modify the area to be evaluated using the URL parameter `?area=area name`
+
 
 ## Installation
 
@@ -18,7 +20,6 @@ This project is a feedback form for Inter City Club. Users can submit their feed
     git clone https://github.com/yourusername/feedback.git
     cd feedback
     ```
-
 
 2. Create a [config.php]() file in the `feedback` directory with the following content:
     ```php
@@ -40,7 +41,8 @@ This project is a feedback form for Inter City Club. Users can submit their feed
     ```
 
 3. Make sure to add [config.php]() to your [.gitignore]() file to avoid pushing sensitive information to the repository.
-3. Upload files to the designated file path on the server.
+
+4. Upload files to the designated file path on the server.
 
 ## Usage
 
@@ -48,6 +50,10 @@ This project is a feedback form for Inter City Club. Users can submit their feed
 2. The language will toggle automatically based on the user's preference.
 3. Fill in the feedback form with your rating, comments, name, and phone number.
 4. Click the submit button to send your feedback.
+5. You can modify the area to be evaluated by using the URL parameter `?area=area name`. For example:
+    ```
+    http://yourserver.com/feedback/?area=GYM
+    ```
 
 ## Screenshot
 
