@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="sweetalert2@11.js"></script>
+   
+    <title>Inter City Club Feedback</title>
+</head>
+
+<body class="ltr">
+    <div class="language-switch" onclick="toggleLanguage()">language-switch</div>
+    
+    <div class="header">
+        <img src="logo.png" alt="Inter City Club Logo" class="logo">
+        <h1 id="title">title</h1>
+        <div id="areaDisplay" class="area-display"></div>
+    </div>
+    
+    <div class="feedback-container">
+        <div class="question" id="question">
+            question
+        </div>
+        <div class="emoji-container">
+            <label class="emoji-option">
+                <div class="emoji-value">0</div>
+                <input type="radio" name="feedback" value="0">
+                <div class="emoji">
+                    <span class="emoji-icon">😡</span>
+                </div>
+            </label>
+            
+            <label class="emoji-option">
+                <div class="emoji-value">1</div>
+                <input type="radio" name="feedback" value="1">
+                <div class="emoji">
+                    <span class="emoji-icon">😞</span>
+                </div>
+            </label>
+            
+            <label class="emoji-option">
+                <div class="emoji-value">2</div>
+                <input type="radio" name="feedback" value="2">
+                <div class="emoji">
+                    <span class="emoji-icon">🤔</span>
+                </div>
+            </label>
+            
+            <label class="emoji-option">
+                <div class="emoji-value">3</div>
+                <input type="radio" name="feedback" value="3">
+                <div class="emoji">
+                    <span class="emoji-icon">😊</span>
+                </div>
+            </label>
+            
+            <label class="emoji-option">
+                <div class="emoji-value">4</div>
+                <input type="radio" name="feedback" value="4">
+                <div class="emoji">
+                    <span class="emoji-icon">😍</span>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-note" id="form-note">
+            form-note
+        </div>
+        
+        <div class="form-group">
+            <textarea id="notes" placeholder="notes"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" id="name" placeholder="name">
+        </div>
+        
+        <div class="form-group">
+            <input type="tel" id="phone" pattern="\d*"  placeholder="phone">
+        </div>
+        
+        <button id="submitBtn" class="submit-btn">
+            <div class="btn-content">
+                <div id="loadingSpinner" class="loading-spinner"></div>
+                <span id="submitText">submitText</span>
+            </div>
+        </button>
+        
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
